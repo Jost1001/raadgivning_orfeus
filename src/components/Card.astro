@@ -1,0 +1,19 @@
+---
+// const {headline, tekst, image} = Astro.props;
+// import {Image} from "astro:assets";
+const {headline, tekst} = Astro.props;
+---
+
+<article>
+    <h3>{headline}</h3>
+    <p>{tekst}</p>
+    <!-- <Image src={image} alt="et billede af noget" width="100"/> -->
+</article>
+<style>
+    p{
+        color: green;
+    }
+
+</style>
+
+
