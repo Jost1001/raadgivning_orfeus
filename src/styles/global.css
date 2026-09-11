@@ -1,3 +1,11 @@
+:root {
+  --Mid-Green: #6acf6a;
+  --Light-green: #25ff25;
+  --Dark-green: #336633; /* color for firgures */
+  --Background: #f4ffc7;
+  --Orange: #ffae2d;
+}
+
 /* ------------ Reset ------------- */
 * {
   margin: 0;
@@ -26,12 +34,4 @@ img {
   }
 }
 
-/* farver */ 
-
-:root {
- --Green: #5fb85f; 
- --Light-green: #25ff25;
---Dark-green: #336633; 
---Background: #f4ffc7;
---Orange: #ffae2d; 
-}
+/* farver */
