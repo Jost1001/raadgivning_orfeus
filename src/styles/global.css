@@ -25,3 +25,13 @@ img {
     grid-template-columns: minmax(0, 180px);
   }
 }
+
+/* farver */ 
+
+:root {
+ --Green: #5fb85f; 
+ --Light-green: #25ff25;
+--Dark-green: #336633; 
+--Background: #f4ffc7;
+--Orange: #ffae2d; 
+}
