@@ -1,10 +1,17 @@
 ---
+import "../styles/global.css";
+
 import Card from "../components/Card.astro";
 import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Banner from "../components/Banner.astro";
+
+const {title, headline, text} = Astro.props;
 ---
 <!-- ^ hedder fences, og alt der kommer heri hedder frontmatter -->
  <!-- hvis vi skal bruge komponenter lavet i andre filer, så er det her vi skal importere dem ind -->
-  <!-- import ____ from "_____/____" -->
+  <!-- import ____ from "../_____/____" -->
 
 <html lang="da">
 	<head>
@@ -18,14 +25,46 @@ import "../styles/global.css";
 
 	</head>
 	<body>
-		<h1>Det her bliver til en super fed hjemmeside!!</h1>
-<div class="card-grid">
-		<Card headline="Overskrift 1" tekst="Fyldetekst"/>
-		<Card headline="Overskrift 2" tekst="Fyldetekst"/>
-		<Card headline="Overskrift 3" tekst="Fyldetekst"/>
+		    <Header headline="Bryd tabooet" text="Velkommen til Rådgivning Orfeus"></Header>
 
-</div>
-
+		<section>
+		 <h2>Læs mere her om vores tilbud til dig som pårørende</h2>
+         <div class="card-grid">
+		  <Card headline="Overskrift 1" tekst="Fyldetekst"/>
+		  <Card headline="Overskrift 2" tekst="Fyldetekst"/>
+		  <Card headline="Overskrift 3" tekst="Fyldetekst"/>
+         </div>
+		</section>
+		<Banner headline="Her er vores banner" text="med de passende billeder eller tekst"/>
+<section>
+	<h2>Her kommer der noget mere indhold</h2>
+	<p>måske videoen?</p>
+	<div class="artikel">
+<p>blablablablablabla blablablablablablablabla</p>
+<p>blablablabla blablablablablblablabla blablablablablablablablablabla blablablabla</p>
+<p>blablablablabla blablablablabla blablablablablablablablablabla blablablablabla</p>
+	</div>
+</section>
 		
 	</body>
+	<Footer></Footer>
 </html>
+
+<style>
+	section{
+		padding: 10%;
+	}
+
+	.card-grid{
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		padding-top: 10px;
+	}
+
+	.artikel{
+		padding-top: 10px;
+		column-count: 2;
+	}
+	
+</style>

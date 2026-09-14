@@ -1,8 +1,9 @@
+/* farver */
 :root {
   --Mid-Green: #6acf6a;
   --Light-green: #25ff25;
   --Dark-green: #336633; /* color for firgures */
-  --Background: #f4ffc7;
+  --Background: #fff9e4;
   --Orange: #ffae2d;
 }
 
@@ -19,6 +20,14 @@ img {
 }
 
 /* --------------------------------- */
+body {
+  background-color: var(--Background);
+}
+
+header,
+footer {
+  background-color: var(--Dark-green);
+}
 
 .card-grid {
   display: grid;
@@ -33,5 +42,3 @@ img {
     grid-template-columns: minmax(0, 180px);
   }
 }
-
-/* farver */

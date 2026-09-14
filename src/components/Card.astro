@@ -9,13 +9,26 @@ const { headline, tekst } = Astro.props;
   <p>{tekst}</p>
   <!-- <Image src={image} alt="et billede af noget" width="100"/> -->
 </article>
+
 <style>
   article {
+    display: flex;
+    flex-direction: column;
     background-color: var(--Mid-Green);
     padding: 1.5rem;
     border-radius: 8px;
+    max-width: 260px;
   }
   p {
     color: var(--Dark-green);
+/* tilføj til index under cards - a href="/more-info" Læs mere */
   }
+
 </style>
+
+<!-- tilføj knap til kortene på index - sæt den 
+ så den kan centreres på kortene -->
+
+ <!-- tilføj billeder til assets mappen -->
+
+ <!-- tilføj billeder til koden -->
