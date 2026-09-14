@@ -1,13 +1,14 @@
 ---
-// const {headline, tekst, image} = Astro.props;
-// import {Image} from "astro:assets";
-const { headline, tekst } = Astro.props;
+const { headline, tekst, image } = Astro.props;
+import { Image } from "astro:assets";
 ---
 
 <article>
-  <h3>{headline}</h3>
+    <a href="/more-info">  
+        <h3>{headline}</h3>
+  {image && <Image src={image} alt={headline} width={200} />}
   <p>{tekst}</p>
-  <!-- <Image src={image} alt="et billede af noget" width="100"/> -->
+    </a>
    <p><a href="/more-info">Læs mere</a></p>
 </article>
 
@@ -20,9 +21,9 @@ const { headline, tekst } = Astro.props;
     border-radius: 8px;
     max-width: 260px;
   }
+
   p {
     color: var(--Dark-green);
-/* tilføj til index under cards - a href="/more-info" Læs mere */
   }
 
 </style>
