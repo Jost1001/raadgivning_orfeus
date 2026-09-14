@@ -4,12 +4,12 @@ import { Image } from "astro:assets";
 ---
 
 <article>
-    <a href="/more-info">  
-        <h3>{headline}</h3>
-  {image && <Image src={image} alt={headline} width={200} />}
-  <p>{tekst}</p>
-    </a>
-   <p><a href="/more-info">Læs mere</a></p>
+  <a href="/more-info">
+    <h3>{headline}</h3>
+    {image && <Image src={image} alt={headline} width={200} />}
+    <p>{tekst}</p>
+  </a>
+  <p><a href="/more-info">Læs mere</a></p>
 </article>
 
 <style>
@@ -25,12 +25,11 @@ import { Image } from "astro:assets";
   p {
     color: var(--Dark-green);
   }
-
 </style>
 
 <!-- tilføj knap til kortene på index - sæt den 
  så den kan centreres på kortene -->
 
- <!-- tilføj billeder til assets mappen -->
+<!-- tilføj billeder til assets mappen -->
 
- <!-- tilføj billeder til koden -->
+<!-- tilføj billeder til koden -->

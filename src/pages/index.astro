@@ -10,7 +10,6 @@ import call from "../assets/headphones_heart.webp";
 import mail from "../assets/pc_mail.webp";
 import socials from "../assets/socials.webp";
 
-
 // const {title, headline, text} = Astro.props;
 ---
 
@@ -37,9 +36,11 @@ import socials from "../assets/socials.webp";
       <p>her kommer der et fantastisk billede</p>
     </section>
 
-    <a href="/contact"> 
-		
-	<Banner headline="Kontakt os" text="Klik her for at finde vores kontaktoplysninger" image={call} /> </a>
+    <a href="/contact">
+      <div>
+        <Banner headline="Kontakt os" text="Klik her for at finde vores kontaktoplysninger" image={call} />
+      </div>
+    </a>
     <section>
       <h2>Lidt om os</h2>
       <p>måske videoen?</p>
