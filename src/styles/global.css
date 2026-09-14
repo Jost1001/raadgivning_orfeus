@@ -21,7 +21,23 @@ img {
 
 /* --------------------------------- */
 nav {
-  justify-content: end;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--Dark-green);
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.nav-btn {
+  display: flex;
+  gap: 10px;
+  padding-right: 1%;
+}
+.contact-btn {
+  background-color: var(--Orange);
+  padding: 10px;
+}
+.tilbud-btn {
+  padding: 10px;
 }
 body {
   background-color: var(--Background);
