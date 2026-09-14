@@ -1,4 +1,4 @@
-<!-- ---
+---
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -15,10 +15,13 @@ const {title, headline, text} = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+     <nav>
+      <p><a href="/">Forside</a></p>
+     </nav>
     <Header headline={headline} text={text}></Header>
 
         <slot/>
 
     <Footer></Footer>
   </body>
-</html> -->
+</html>

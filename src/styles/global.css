@@ -20,6 +20,9 @@ img {
 }
 
 /* --------------------------------- */
+nav {
+  justify-content: end;
+}
 body {
   background-color: var(--Background);
 }
@@ -36,7 +39,20 @@ footer {
   justify-content: center;
   margin-inline: auto;
 }
-
+.tilbud {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-left: 10%;
+}
+.tilbud-titel {
+  padding-top: 20px;
+  margin-left: 9%;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
 @media (max-width: 750px) {
   .card-grid {
     grid-template-columns: minmax(0, 180px);
