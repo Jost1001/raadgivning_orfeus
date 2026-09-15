@@ -3,12 +3,14 @@ import "../styles/global.css";
 
 import Card from "../components/Card.astro";
 import "../styles/global.css";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Banner from "../components/Banner.astro";
 import call from "../assets/headphones_heart.webp";
 import mail from "../assets/pc_mail.webp";
 import socials from "../assets/socials.webp";
+import tabu from "../assets/brydtabuet.webp";
+import hands from "../assets/helping_hand.webp";
+import { Image } from "astro:assets";
 
 // const {title, headline, text} = Astro.props;
 ---
@@ -32,13 +34,13 @@ import socials from "../assets/socials.webp";
         <a class="contact-btn" href="/contact">Kontakt os</a>
       </div>
     </nav>
-    <section>
-      <p>her kommer der et fantastisk billede</p>
+    <section class="tabu-img">
+      <Image class="bryd" src={tabu} alt="bryd tabuet" />
     </section>
 
     <a href="/contact">
       <div>
-        <Banner headline="Kontakt os" text="Klik her for at finde vores kontaktoplysninger" image={call} />
+        <Banner headline="Kontakt os" text="Klik her for at finde vores kontaktoplysninger" image={hands} />
       </div>
     </a>
     <section>
@@ -77,5 +79,11 @@ import socials from "../assets/socials.webp";
   .artikel {
     padding-top: 10px;
     column-count: 2;
+  }
+  .bryd {
+    width: 100%;
+  }
+  .tabu-img {
+    padding: 0;
   }
 </style>
