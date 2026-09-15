@@ -48,6 +48,11 @@ footer {
   background-color: var(--Dark-green);
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 300px));

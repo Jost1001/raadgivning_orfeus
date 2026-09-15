@@ -10,6 +10,7 @@ import mail from "../assets/pc_mail.webp";
 import socials from "../assets/socials.webp";
 import tabu from "../assets/brydtabuet.webp";
 import hands from "../assets/helping_hand.webp";
+import logo from "../assets/logohvid.webp";
 import { Image } from "astro:assets";
 
 // const {title, headline, text} = Astro.props;
@@ -28,7 +29,7 @@ import { Image } from "astro:assets";
   </head>
   <body>
     <nav>
-      <div>logo</div>
+      <div><Image class="logo" src={logo} alt="logo" />Rådgivningen Orfeus</div>
       <div class="nav-btn">
         <a class="tilbud-btn" href="/more-info">Tilbud</a>
         <a class="contact-btn" href="/contact">Kontakt os</a>
@@ -39,8 +40,9 @@ import { Image } from "astro:assets";
     </section>
 
     <a href="/contact">
-      <div>
-        <Banner headline="Kontakt os" text="Klik her for at finde vores kontaktoplysninger" image={hands} />
+      <div class="contact-grid">
+        <Banner headline="Kontakt os" text="Klik her for at finde vores kontaktoplysninger" />
+        <Image class="connection" src={hands} alt="hands reaching out" />
       </div>
     </a>
     <section>
@@ -85,5 +87,11 @@ import { Image } from "astro:assets";
   }
   .tabu-img {
     padding: 0;
+  }
+  .logo {
+    width: 10%;
+  }
+  .connection {
+    width: 40%;
   }
 </style>
