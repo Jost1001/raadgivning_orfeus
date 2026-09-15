@@ -61,7 +61,7 @@ footer {
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: var(--Orange);
+  background-color: #d1cf8b;
 }
 
 .card-grid {
