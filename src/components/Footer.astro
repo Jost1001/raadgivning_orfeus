@@ -1,6 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../assets/lysgr├©n-m├©rkgr├©n-cirkel.png";
+import facebook from "../assets/facebook.webp";
+import instagram from "../assets/insta-1.webp";
+import linked from "../assets/linktin.webp";
 ---
 
 <footer>
@@ -9,20 +12,20 @@ import logo from "../assets/lysgr├©n-m├©rkgr├©n-cirkel.png";
     <br />
   </div>
   <div>
-    <p>Følg os</p>
-    <a href="/"><p>Facebook</p></a>
-    <a href="/"><p>Instagram</p></a>
-    <a href="/"><p>LinkedIn</p></a>
+    <p><strong>Find os</strong></p>
+    <a href="/"><Image class="socials-img" src={facebook} alt="Facebook" /><p>Facebook</p></a>
+    <a href="/"><Image class="socials-img" src={instagram} alt="Instagram" /><p>Instagram</p></a>
+    <a href="/"><Image class="socials-img" src={linked} alt="LinkedIn" /><p>LinkedIn</p></a>
   </div>
   <div>
     <div>
-      <p>Vores sider</p>
+      <p><strong>Vores sider</strong></p>
       <a href="/"><p>Forside</p></a>
       <a href="/more-info"><p>Tilbud</p></a>
       <a href="/contact"><p>Kontakt os</p></a>
       <br />
       <div>
-        <p>Kontakt os</p>
+        <p><strong>Kontakt os</strong></p>
         <p>+45 70604657</p>
         <a href="mailto:kontakt@raadgivningen-orfeus.dk"><p>kontakt@raadgivningen-orfeus.dk</p> </a>
         <p>CVR: 46258657</p>
@@ -48,6 +51,9 @@ import logo from "../assets/lysgr├©n-m├©rkgr├©n-cirkel.png";
       p {
         color: var(--Tekst);
       }
+    }
+    .socials-img {
+      max-width: 30px;
     }
     @media (min-width: 750px) {
       footer {

@@ -32,6 +32,8 @@ nav {
   display: flex;
   gap: 10px;
   padding-right: 1%;
+  height: min-content;
+  align-self: center;
 }
 .contact-btn {
   background-color: var(--Brown);

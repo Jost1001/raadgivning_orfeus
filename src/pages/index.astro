@@ -8,7 +8,7 @@ import Banner from "../components/Banner.astro";
 import call from "../assets/headphones_heart.webp";
 import mail from "../assets/pc_mail.webp";
 import socials from "../assets/socials.webp";
-import tabu from "../assets/brydtabuet_short.webp";
+import tabu from "../assets/header-done.webp";
 import hands from "../assets/helping_hand.webp";
 import logo from "../assets/lysgr├©n-m├©rkgr├©n-cirkel.png";
 import { Image } from "astro:assets";
@@ -29,7 +29,7 @@ import { Image } from "astro:assets";
   </head>
   <body>
     <nav>
-      <div><Image class="logo-img" src={logo} alt="Rådgivningen Orfeus logo" /></div>
+      <div><a href="/"><Image class="logo-img" src={logo} alt="Rådgivningen Orfeus logo" /></a></div>
       <div class="nav-btn">
         <a class="tilbud-btn" href="/more-info">Tilbud</a>
         <a class="contact-btn" href="/contact">Kontakt os</a>
@@ -86,6 +86,7 @@ import { Image } from "astro:assets";
   }
   .bryd {
     width: 100%;
+    max-width: 1200px;
   }
   .tabu-img {
     padding: 0;
