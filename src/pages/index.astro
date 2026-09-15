@@ -8,9 +8,9 @@ import Banner from "../components/Banner.astro";
 import call from "../assets/headphones_heart.webp";
 import mail from "../assets/pc_mail.webp";
 import socials from "../assets/socials.webp";
-import tabu from "../assets/brydtabuet.webp";
+import tabu from "../assets/brydtabuet_short.webp";
 import hands from "../assets/helping_hand.webp";
-import logo from "../assets/logohvid.webp";
+import logo from "../assets/lysgr├©n-m├©rkgr├©n-cirkel.png";
 import { Image } from "astro:assets";
 
 // const {title, headline, text} = Astro.props;
@@ -25,11 +25,11 @@ import { Image } from "astro:assets";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="robots" content="noindex" />
-    <title>Rådgivning Orfeus</title>
+    <title>Bryd tabuet</title>
   </head>
   <body>
     <nav>
-      <div><Image class="logo" src={logo} alt="logo" />Rådgivningen Orfeus</div>
+      <div><Image class="logo-img" src={logo} alt="Rådgivningen Orfeus logo" /></div>
       <div class="nav-btn">
         <a class="tilbud-btn" href="/more-info">Tilbud</a>
         <a class="contact-btn" href="/contact">Kontakt os</a>
@@ -47,28 +47,30 @@ import { Image } from "astro:assets";
     </a>
     <section>
       <h2>Lidt om os</h2>
-      <p>måske videoen?</p>
+      <p>Og denne kampagne</p>
       <div class="artikel">
-        <p>blablablablablabla blablablablablablablabla</p>
-        <p>blablablabla blablablablablblablabla blablablablablablablablablabla blablablabla</p>
-        <p>blablablablabla blablablablabla blablablablablablablablablabla blablablablabla</p>
+        <p>Hos Rådgivningen Orfeus arbejder vi med rådgivning til folk der er pårørende til folk med et midbrug. Og vi ser dagligt at folk i denne rolle kan have svært ved at se at de også kan have brug for hjælp, rådgivning eller bare en til at lytte. Det er det vi er her for.</p>
+        <p>Alle kender til det med at "fint" er det letteste ord vi har til at beskrive vores egen situation.</p>
+        <p>Alle kender nok også til at befinde sig i en situation, hvor man tænker at der sikkert er andre der har det sværere end en selv. Denne tankegang kan gøre det svært at søge hjælp, og det vil vi gerne gøre noget ved.</p>
+        <p>Derfor har vi lavet denne kampagneside, hvor vores fokus netop vil være på at bryde tabuet om at tale om det at være pårørende. Vi vil gerne prøve at gøre det til et mere alment omtalt emne, så der er flere der kan opdage at de måske har brug for at tale med nogen, eller indse at man ikke behøver at være den der har det sværest.</p>
       </div>
     </section>
     <section>
       <h2>Læs mere her om vores tilbud til dig som pårørende</h2>
       <div class="card-grid">
-        <Card headline="Overskrift 1" tekst="Fyldetekst" image={call} />
-        <Card headline="Overskrift 2" tekst="Fyldetekst" image={mail} />
-        <Card headline="Overskrift 3" tekst="Fyldetekst" image={socials} />
+        <Card headline="Rådgivningens telefon" tekst="Lad os tage en snak om det der trykker." image={call} />
+        <Card headline="Individuelt forløb" tekst="Del i et fortroligt rum, det der fylder i tankerne og livet." image={mail} />
+        <Card headline="Gruppeforløb" tekst="For dig der kan føle dig ensom, og som mangler andre mennesker at spejles i." image={socials} />
       </div>
     </section>
+    <Footer />
   </body>
-  <Footer />
 </html>
 
 <style>
   section {
-    padding: 10%;
+    padding-inline: 10%;
+    padding-block: 6%;
   }
 
   .card-grid {
@@ -91,7 +93,12 @@ import { Image } from "astro:assets";
   .logo {
     width: 10%;
   }
+  .logo-img {
+    max-width: 70px;
+    margin-left: 15px;
+  }
   .connection {
-    width: 40%;
+    width: 50%;
+    margin-left: 30%;
   }
 </style>

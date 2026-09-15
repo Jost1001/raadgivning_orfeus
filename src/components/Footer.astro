@@ -1,18 +1,63 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/lysgr├©n-m├©rkgr├©n-cirkel.png";
+---
+
 <footer>
   <div>
-    <h2>Her er ofte noget branding</h2>
-    <p>Med et tekst, som konvertere</p>
+    <a href="/"> <Image src={logo} alt="Rådgivningen Orfeus logo" /></a>
+    <br />
   </div>
   <div>
-    <h2>Kontakt</h2>
-    <p><a href="#">En mail</a></p>
-    <p><a href="#">Et telefon nummer</a></p>
-    <p>En rigtig</p>
-    <p>Adresse</p>
+    <p>Følg os</p>
+    <a href="/"><p>Facebook</p></a>
+    <a href="/"><p>Instagram</p></a>
+    <a href="/"><p>LinkedIn</p></a>
   </div>
-</footer>
+  <div>
+    <div>
+      <p>Vores sider</p>
+      <a href="/"><p>Forside</p></a>
+      <a href="/more-info"><p>Tilbud</p></a>
+      <a href="/contact"><p>Kontakt os</p></a>
+      <br />
+      <div>
+        <p>Kontakt os</p>
+        <p>+45 70604657</p>
+        <a href="mailto:kontakt@raadgivningen-orfeus.dk"><p>kontakt@raadgivningen-orfeus.dk</p> </a>
+        <p>CVR: 46258657</p>
+      </div>
+    </div>
+  </div>
 
-<style>
+  <style>
+    footer {
+      display: grid;
+      background-color: var(--Dark-green);
+      gap: 1.5rem;
+      padding: 4rem 2rem;
+      color: var(--Background);
+      img {
+        max-width: 200px;
+      }
+      a {
+        /* font-family: ; */
+        color: var(--Background);
+        font-weight: 300;
+      }
+      p {
+        color: var(--Tekst);
+      }
+    }
+    @media (min-width: 750px) {
+      footer {
+        grid-template-columns: 2fr 1fr 1fr;
+        padding-top: 6rem;
+      }
+    }
+  </style>
+
+  <!-- <style>
   footer {
     width: 100%;
     height: 200px;
@@ -26,4 +71,5 @@
       grid-template-columns: 2fr 1fr;
     }
   }
-</style>
+</style> -->
+</footer>

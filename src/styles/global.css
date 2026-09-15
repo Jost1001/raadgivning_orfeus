@@ -1,10 +1,11 @@
 /* farver */
 :root {
-  --Mid-Green: #6acf6a;
-  --Light-green: #25ff25;
-  --Dark-green: #336633; /* color for firgures */
-  --Background: #fff9e4;
-  --Orange: #ffae2d;
+  --Mid-Green: #d1cf8b;
+  --Tekst: #ffecbd;
+  --Brown: #4c392a;
+  --Dark-green: #5a6042; /* color for firgures */
+  --Background: #feffe1;
+  --Orange: #fca652;
 }
 
 /* ------------ Reset ------------- */
@@ -33,11 +34,18 @@ nav {
   padding-right: 1%;
 }
 .contact-btn {
-  background-color: var(--Orange);
+  background-color: var(--Brown);
   padding: 10px;
 }
 .tilbud-btn {
   padding: 10px;
+}
+
+h2 {
+  color: var(--Brown);
+}
+h3 {
+  color: var(--Brown);
 }
 body {
   background-color: var(--Background);
@@ -51,6 +59,7 @@ footer {
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: var(--Orange);
 }
 
 .card-grid {
@@ -71,8 +80,11 @@ footer {
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--Tekst);
   font-weight: 600;
+}
+p {
+  color: var(--Brown);
 }
 @media (max-width: 750px) {
   .card-grid {
