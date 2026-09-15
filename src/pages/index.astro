@@ -55,7 +55,7 @@ import { Image } from "astro:assets";
         <p>Derfor har vi lavet denne kampagneside, hvor vores fokus netop vil være på at bryde tabuet om at tale om det at være pårørende. Vi vil gerne prøve at gøre det til et mere alment omtalt emne, så der er flere der kan opdage at de måske har brug for at tale med nogen, eller indse at man ikke behøver at være den der har det sværest.</p>
       </div>
     </section>
-    <section>
+    <section class="midte">
       <h2>Læs mere her om vores tilbud til dig som pårørende</h2>
       <div class="card-grid">
         <Card headline="Rådgivningens telefon" tekst="Lad os tage en snak om det der trykker." image={call} />
@@ -73,20 +73,12 @@ import { Image } from "astro:assets";
     padding-block: 6%;
   }
 
-  .card-grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    padding-top: 10px;
-  }
-
   .artikel {
     padding-top: 10px;
     column-count: 2;
   }
   .bryd {
     width: 100%;
-    max-width: 1200px;
   }
   .tabu-img {
     padding: 0;

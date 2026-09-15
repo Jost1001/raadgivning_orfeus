@@ -88,8 +88,17 @@ a {
 p {
   color: var(--Brown);
 }
-@media (max-width: 750px) {
+.card-grid {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 10px;
+  max-width: min-content;
+}
+@media (max-width: 800px) {
   .card-grid {
-    grid-template-columns: minmax(0, 180px);
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    max-width: 100%;
   }
 }
